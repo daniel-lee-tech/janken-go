@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/raexufybyel/janken-go/db"
 	"log"
+	"net/http"
 )
-import "net/http"
-import _ "github.com/go-sql-driver/mysql"
 
 func main() {
 	mysql, err := db.NewDbConnection()
